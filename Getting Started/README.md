@@ -40,7 +40,7 @@ One of the most important skills in AI is knowing when to use which tool. While 
 
 ## 3. Neural Network Architectures & Use Cases
 
-Just as buildings use different materials (wood, metal, concrete), neural networks use different architectures tailored to specific types of data[cite: 27, 32, 33].
+Just as buildings use different materials (wood, metal, concrete), neural networks use different architectures tailored to specific types of data. Each architecture has unique strengths that make it ideal for particular problem domains.
 
 ### 🚀 Popular Architectures
 1.  **Feed Forward Neural Network (FNN)**: The simplest architecture, where data moves in one direction.
