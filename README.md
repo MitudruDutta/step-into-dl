@@ -12,7 +12,12 @@ step-into-dl/
 │   └── README.md          # Deep learning foundations & overview
 ├── Neural Networks: Basics/
 │   ├── README.md          # Neurons & activation functions theory
-│   └── functions.ipynb    # Hands-on activation function implementations
+│   └── functions.ipynb    # Activation function implementations
+├── Pytorch/
+│   ├── README.md          # Matrices, tensors & calculus fundamentals
+│   ├── tensor1.ipynb      # Tensor operations, matrix math, GPU acceleration
+│   ├── tensor2.ipynb      # Tensor attributes, reshaping, initialization
+│   └── autograd.ipynb     # Automatic differentiation & gradients
 └── README.md              # You are here
 ```
 
@@ -41,11 +46,24 @@ Deep dive into the building blocks of neural networks:
   - When to use each function
   - Mathematical formulas and characteristics
 
-### 3. Practical Implementations
-Jupyter notebook with working code:
-- NumPy implementations of activation functions
-- Step-by-step explanations of each function's behavior
-- Output interpretation and real-world applications
+### 3. PyTorch Fundamentals
+Introduction to PyTorch and the math behind deep learning:
+- Matrix fundamentals and why they matter for AI
+- Tensor basics: dimensions, attributes, and operations
+- Calculus for learning: derivatives, chain rule, and gradients
+- Autograd: automatic differentiation in PyTorch
+- PyTorch tensors vs. NumPy arrays
+- Common tensor operations reference
+
+### 4. Practical Implementations
+Jupyter notebooks with working code and detailed explanations:
+
+| Notebook | Topics |
+|----------|--------|
+| `functions.ipynb` | Sigmoid, Softmax, Tanh, ReLU implementations with NumPy |
+| `tensor1.ipynb` | Tensor creation, arithmetic, matrix multiplication, GPU acceleration |
+| `tensor2.ipynb` | Shape, dtype, device attributes, reshaping, initialization |
+| `autograd.ipynb` | Gradient tracking, backward(), chain rule, torch.no_grad() |
 
 ---
 
@@ -53,10 +71,11 @@ Jupyter notebook with working code:
 
 - Python 3.8+
 - NumPy
+- PyTorch
 - Jupyter Notebook (for running `.ipynb` files)
 
 ```bash
-pip install numpy jupyter
+pip install numpy torch jupyter
 ```
 
 ---
@@ -65,7 +84,10 @@ pip install numpy jupyter
 
 1. **Start here** → `Getting Started/README.md` for foundational concepts
 2. **Go deeper** → `Neural Networks: Basics/README.md` for neuron mechanics
-3. **Get hands-on** → `Neural Networks: Basics/functions.ipynb` for code practice
+3. **Practice activations** → `Neural Networks: Basics/functions.ipynb`
+4. **Learn PyTorch** → `Pytorch/README.md` for tensors and calculus
+5. **Tensor operations** → `Pytorch/tensor1.ipynb` and `tensor2.ipynb`
+6. **Master autograd** → `Pytorch/autograd.ipynb` for automatic differentiation
 
 ---
 
