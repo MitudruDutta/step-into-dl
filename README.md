@@ -51,10 +51,12 @@ Deep dive into the building blocks of neural networks:
 - What is a neuron and how it processes information
 - Evolution from Perceptrons to Multilayer Perceptrons (MLPs)
 - Intuitive examples (insurance prediction model)
+- Role of activation functions and non-linearity
 - Comprehensive guide to activation functions:
   - Sigmoid, Softmax, Tanh, ReLU, Leaky ReLU
-  - When to use each function
-  - Mathematical formulas and characteristics
+  - Mathematical formulas and when-to-use guidance
+  - See `functions.ipynb` for implementations and detailed usage examples
+- Practical tips for weight initialization, debugging, and scaling
 
 ### 3. PyTorch Fundamentals
 Introduction to PyTorch and the math behind deep learning:
