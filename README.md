@@ -36,15 +36,15 @@ step-into-dl/
 ## 📚 What's Covered
 
 ### 1. Getting Started
-A comprehensive introduction to deep learning covering:
-- Neural network architecture (input, hidden, output layers)
+A comprehensive introduction to deep learning split into focused topics:
+- Neural network foundation (architecture, neurons, information flow)
 - Deep Learning vs. Statistical ML decision matrix
 - Popular architectures (FNN, CNN, RNN, Transformers) and their use cases
-- Developer toolkit: PyTorch, TensorFlow, GPUs/TPUs
-- Training fundamentals: loss functions, backpropagation, optimizers
-- Common challenges: overfitting, underfitting, vanishing gradients
+- Developer toolkit: PyTorch, TensorFlow, GPUs/TPUs, cloud options
+- Training fundamentals: loss functions, backpropagation, optimizers, hyperparameters
+- Common challenges: overfitting, underfitting, vanishing/exploding gradients
 - Evaluation metrics for classification and regression
-- Best practices and learning resources
+- Best practices, learning resources, and glossary
 
 ### 2. Neural Networks: Basics
 Deep dive into the building blocks of neural networks:
