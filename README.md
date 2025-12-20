@@ -9,16 +9,26 @@ A hands-on learning repository for understanding deep learning fundamentals from
 ```
 step-into-dl/
 ├── Getting Started/
-│   └── README.md          # Deep learning foundations & overview
+│   └── README.md                  # Deep learning foundations & overview
 ├── Neural Networks: Basics/
-│   ├── README.md          # Neurons & activation functions theory
-│   └── functions.ipynb    # Activation function implementations
+│   ├── README.md                  # Neurons & activation functions theory
+│   └── functions.ipynb            # Activation function implementations
 ├── Pytorch/
-│   ├── README.md          # Matrices, tensors & calculus fundamentals
-│   ├── tensor1.ipynb      # Tensor operations, matrix math, GPU acceleration
-│   ├── tensor2.ipynb      # Tensor attributes, reshaping, initialization
-│   └── autograd.ipynb     # Automatic differentiation & gradients
-└── README.md              # You are here
+│   ├── README.md                  # Matrices, tensors & calculus fundamentals
+│   ├── tensor1.ipynb              # Tensor operations, matrix math, GPU
+│   ├── tensor2.ipynb              # Tensor attributes, reshaping, init
+│   └── autograd.ipynb             # Automatic differentiation & gradients
+├── Neural Network: Training/
+│   ├── README.md                  # Training module overview
+│   ├── 01-Backpropagation.md      # How networks learn from errors
+│   ├── 02-Gradient-Descent.md     # Optimization fundamentals
+│   ├── 03-GD-Variants.md          # Batch vs Mini-Batch vs SGD
+│   ├── 04-Optimizers.md           # Adam, SGD+Momentum, RMSprop
+│   ├── 05-Monitoring-Training.md  # Metrics, debugging, early stopping
+│   ├── data_generation.ipynb      # Generate synthetic training data
+│   ├── gradient_descent.ipynb     # GD implementation from scratch
+│   └── gd_vs_mini_gd_vs_sgd.ipynb # Compare GD variants
+└── README.md                      # You are here
 ```
 
 ---
@@ -55,15 +65,26 @@ Introduction to PyTorch and the math behind deep learning:
 - PyTorch tensors vs. NumPy arrays
 - Common tensor operations reference
 
-### 4. Practical Implementations
+### 4. Neural Network Training
+Complete guide to training neural networks:
+- Backpropagation: how networks learn from errors
+- Gradient Descent: the optimization engine
+- GD Variants: Batch, Mini-Batch, and SGD comparison
+- Advanced Optimizers: Adam, SGD+Momentum, RMSprop, AdamW
+- Monitoring Training: metrics, debugging, early stopping
+
+### 5. Practical Implementations
 Jupyter notebooks with working code and detailed explanations:
 
-| Notebook | Topics |
-|----------|--------|
-| `functions.ipynb` | Sigmoid, Softmax, Tanh, ReLU implementations with NumPy |
-| `tensor1.ipynb` | Tensor creation, arithmetic, matrix multiplication, GPU acceleration |
-| `tensor2.ipynb` | Shape, dtype, device attributes, reshaping, initialization |
-| `autograd.ipynb` | Gradient tracking, backward(), chain rule, torch.no_grad() |
+| Notebook | Location | Topics |
+|----------|----------|--------|
+| `functions.ipynb` | Neural Networks: Basics | Sigmoid, Softmax, Tanh, ReLU with NumPy |
+| `tensor1.ipynb` | Pytorch | Tensor creation, arithmetic, matrix multiplication, GPU |
+| `tensor2.ipynb` | Pytorch | Shape, dtype, device, reshaping, initialization |
+| `autograd.ipynb` | Pytorch | Gradient tracking, backward(), chain rule |
+| `data_generation.ipynb` | Neural Network: Training | Generate synthetic employee bonus dataset |
+| `gradient_descent.ipynb` | Neural Network: Training | Implement GD from scratch in PyTorch |
+| `gd_vs_mini_gd_vs_sgd.ipynb` | Neural Network: Training | Compare Batch GD, Mini-Batch GD, SGD |
 
 ---
 
@@ -71,11 +92,13 @@ Jupyter notebooks with working code and detailed explanations:
 
 - Python 3.8+
 - NumPy
+- Pandas
 - PyTorch
-- Jupyter Notebook (for running `.ipynb` files)
+- Matplotlib
+- Jupyter Notebook
 
 ```bash
-pip install numpy torch jupyter
+pip install numpy pandas torch matplotlib jupyter
 ```
 
 ---
@@ -88,6 +111,8 @@ pip install numpy torch jupyter
 4. **Learn PyTorch** → `Pytorch/README.md` for tensors and calculus
 5. **Tensor operations** → `Pytorch/tensor1.ipynb` and `tensor2.ipynb`
 6. **Master autograd** → `Pytorch/autograd.ipynb` for automatic differentiation
+7. **Understand training** → `Neural Network: Training/` documentation
+8. **Hands-on GD** → `gradient_descent.ipynb` and `gd_vs_mini_gd_vs_sgd.ipynb`
 
 ---
 

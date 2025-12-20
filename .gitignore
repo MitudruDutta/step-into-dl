@@ -48,7 +48,6 @@ Thumbs.db
 *.ckpt
 
 # Data files
-*.csv
 *.json
 *.pkl
 *.h5
@@ -62,3 +61,5 @@ runs/
 # Model outputs
 models/
 checkpoints/
+
+Exercise/
