@@ -28,6 +28,8 @@ step-into-dl/
 │   ├── data_generation.ipynb      # Generate synthetic training data
 │   ├── gradient_descent.ipynb     # GD implementation from scratch
 │   └── gd_vs_mini_gd_vs_sgd.ipynb # Compare GD variants
+├── Neural Networks: Pytorch/
+│   └── README.md                  # nn.Module, DataLoaders, loss functions
 └── README.md                      # You are here
 ```
 
@@ -75,7 +77,15 @@ Complete guide to training neural networks:
 - Advanced Optimizers: Adam, SGD+Momentum, RMSprop, AdamW
 - Monitoring Training: metrics, debugging, early stopping
 
-### 5. Practical Implementations
+### 5. Neural Networks in PyTorch
+Practical implementation of neural networks:
+- Building models with `nn.Module`
+- Efficient data pipelines with Datasets and DataLoaders
+- Loss functions: Binary Cross Entropy for binary classification
+- Categorical Cross Entropy for multi-class problems
+- Complete training loop workflow
+
+### 6. Practical Implementations
 Jupyter notebooks with working code and detailed explanations:
 
 | Notebook | Location | Topics |
@@ -115,6 +125,7 @@ pip install numpy pandas torch matplotlib jupyter
 6. **Master autograd** → `Pytorch/autograd.ipynb` for automatic differentiation
 7. **Understand training** → `Neural Network: Training/` documentation
 8. **Hands-on GD** → `gradient_descent.ipynb` and `gd_vs_mini_gd_vs_sgd.ipynb`
+9. **Build models** → `Neural Networks: Pytorch/README.md` for nn.Module and DataLoaders
 
 ---
 
