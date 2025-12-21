@@ -16,6 +16,17 @@ This module covers the practical transition from theoretical neural networks to 
 
 ---
 
+## 💻 Notebooks
+
+| Notebook | Description |
+|----------|-------------|
+| [log_loss.ipynb](log_loss.ipynb) | MSE vs Binary Cross Entropy comparison |
+| [cross_entropy_loss.ipynb](cross_entropy_loss.ipynb) | Cross Entropy for multi-class classification |
+| [dataset_dataloader.ipynb](dataset_dataloader.ipynb) | FashionMNIST dataset and DataLoader usage |
+| [handwritten_digits.ipynb](handwritten_digits.ipynb) | Complete MNIST digit classifier with evaluation |
+
+---
+
 ## 🎯 Learning Path
 
 1. **nn.Module** → Learn to build custom models

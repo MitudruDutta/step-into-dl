@@ -29,7 +29,11 @@ step-into-dl/
 │   ├── gradient_descent.ipynb     # GD implementation from scratch
 │   └── gd_vs_mini_gd_vs_sgd.ipynb # Compare GD variants
 ├── Neural Networks: Pytorch/
-│   └── README.md                  # nn.Module, DataLoaders, loss functions
+│   ├── README.md                  # nn.Module, DataLoaders, loss functions
+│   ├── log_loss.ipynb             # MSE vs BCE comparison
+│   ├── cross_entropy_loss.ipynb   # Cross Entropy demonstration
+│   ├── dataset_dataloader.ipynb   # Dataset and DataLoader usage
+│   └── handwritten_digits.ipynb   # Complete MNIST classifier
 └── README.md                      # You are here
 ```
 
@@ -97,6 +101,10 @@ Jupyter notebooks with working code and detailed explanations:
 | `data_generation.ipynb` | Neural Network: Training | Generate synthetic employee bonus dataset |
 | `gradient_descent.ipynb` | Neural Network: Training | Implement GD from scratch in PyTorch |
 | `gd_vs_mini_gd_vs_sgd.ipynb` | Neural Network: Training | Compare Batch GD, Mini-Batch GD, SGD |
+| `log_loss.ipynb` | Neural Networks: Pytorch | MSE vs Binary Cross Entropy |
+| `cross_entropy_loss.ipynb` | Neural Networks: Pytorch | Cross Entropy for multi-class |
+| `dataset_dataloader.ipynb` | Neural Networks: Pytorch | FashionMNIST and DataLoader usage |
+| `handwritten_digits.ipynb` | Neural Networks: Pytorch | Complete MNIST classifier |
 
 ---
 
