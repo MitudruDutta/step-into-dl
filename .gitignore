@@ -43,7 +43,6 @@ ENV/
 Thumbs.db
 
 # PyTorch
-*.pt
 *.pth
 *.ckpt
 
