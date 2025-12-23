@@ -17,7 +17,8 @@ A structured, hands-on learning repository for mastering deep learning fundament
 | PyTorch Fundamentals | Tensors, autograd, GPU computing | ⭐⭐ Intermediate |
 | Neural Network Training | Backprop, gradient descent, optimizers | ⭐⭐ Intermediate |
 | Neural Networks in PyTorch | nn.Module, DataLoaders, loss functions | ⭐⭐ Intermediate |
-| Model Optimization | Momentum, RMSProp, Adam, hyperparameters | ⭐⭐⭐ Advanced |
+| Model Optimization: Training Algorithms | Momentum, RMSProp, Adam | ⭐⭐⭐ Advanced |
+| Model Optimization: Regularization | Dropout, L1/L2, BatchNorm, Early Stopping | ⭐⭐⭐ Advanced |
 
 ---
 
@@ -95,6 +96,19 @@ step-into-dl/
 │   ├── 06-Optimizer-Comparison.md
 │   └── optimizers.ipynb               # 📓 Optimizer comparison
 │
+├── 🛡️ Model Optimization: Regularization Techniques/
+│   ├── README.md                      # Module overview and learning path
+│   ├── 01-Understanding-Regularization.md  # Overfitting and bias-variance
+│   ├── 02-Dropout.md                  # Dropout regularization
+│   ├── 03-L1-L2-Regularization.md     # Weight penalties and decay
+│   ├── 04-Batch-Normalization.md      # Normalizing layer inputs
+│   ├── 05-Early-Stopping.md           # Optimal stopping point
+│   ├── 06-Data-Augmentation.md        # Expanding training data
+│   ├── dropout_regularization.ipynb   # 📓 Dropout comparison
+│   ├── l2_regularization.ipynb        # 📓 Weight decay demo
+│   ├── batch_norm.ipynb               # 📓 BatchNorm on MNIST
+│   └── early_stopping.ipynb           # 📓 Early stopping implementation
+│
 └── README.md                          # You are here
 ```
 
@@ -141,6 +155,10 @@ step-into-dl/
 | `dataset_dataloader.ipynb` | PyTorch NN | FashionMNIST data pipeline |
 | `handwritten_digits.ipynb` | PyTorch NN | Complete MNIST classifier |
 | `optimizers.ipynb` | Optimization | SGD vs Momentum vs Adam |
+| `dropout_regularization.ipynb` | Regularization | Dropout effect on Sonar dataset |
+| `l2_regularization.ipynb` | Regularization | Weight decay and weight distributions |
+| `batch_norm.ipynb` | Regularization | BatchNorm impact on MNIST training |
+| `early_stopping.ipynb` | Regularization | Patience-based stopping with checkpoints |
 
 ---
 
@@ -212,12 +230,20 @@ Building real models:
 - Datasets and DataLoaders for efficient training
 - Loss functions: BCE, Cross Entropy, when to use each
 
-### 6. Model Optimization
+### 6. Model Optimization: Training Algorithms
 Advanced training techniques:
 - EWMA: the math behind modern optimizers
 - Momentum: accelerating convergence
 - RMSProp: adaptive learning rates
 - Adam: the gold standard optimizer
+
+### 7. Model Optimization: Regularization Techniques
+Preventing overfitting:
+- Dropout: randomly deactivating neurons
+- L1/L2 regularization: weight penalties
+- Batch Normalization: stabilizing training
+- Early Stopping: knowing when to stop
+- Data Augmentation: expanding training data
 
 ---
 
