@@ -19,6 +19,7 @@ A structured, hands-on learning repository for mastering deep learning fundament
 | Neural Networks in PyTorch | nn.Module, DataLoaders, loss functions | ⭐⭐ Intermediate |
 | Model Optimization: Training Algorithms | Momentum, RMSProp, Adam | ⭐⭐⭐ Advanced |
 | Model Optimization: Regularization | Dropout, L1/L2, BatchNorm, Early Stopping | ⭐⭐⭐ Advanced |
+| Model Optimization: Hyperparameter Tuning | Grid Search, Random Search, Optuna | ⭐⭐⭐ Advanced |
 
 ---
 
@@ -109,6 +110,17 @@ step-into-dl/
 │   ├── batch_norm.ipynb               # 📓 BatchNorm on MNIST
 │   └── early_stopping.ipynb           # 📓 Early stopping implementation
 │
+├── 🎛️ Model Optimization: Hyperparameter Tuning/
+│   ├── README.md                      # Module overview and learning path
+│   ├── 01-What-is-Hyperparameter-Tuning.md  # Hyperparameters vs parameters
+│   ├── 02-Manual-Tuning.md            # LR finder, systematic approach
+│   ├── 03-Grid-Search.md              # Exhaustive search
+│   ├── 04-Random-Search.md            # Efficient sampling
+│   ├── 05-Bayesian-Optimization.md    # Optuna and intelligent search
+│   ├── 06-Cross-Validation.md         # K-fold CV and validation strategies
+│   ├── 07-Practical-Guidelines.md     # Tuning order, common mistakes
+│   └── optuna_tuning.ipynb            # 📓 Optuna implementation
+│
 └── README.md                          # You are here
 ```
 
@@ -159,6 +171,7 @@ step-into-dl/
 | `l2_regularization.ipynb` | Regularization | Weight decay and weight distributions |
 | `batch_norm.ipynb` | Regularization | BatchNorm impact on MNIST training |
 | `early_stopping.ipynb` | Regularization | Patience-based stopping with checkpoints |
+| `optuna_tuning.ipynb` | Hyperparameter Tuning | Bayesian optimization with Optuna |
 
 ---
 
@@ -244,6 +257,16 @@ Preventing overfitting:
 - Batch Normalization: stabilizing training
 - Early Stopping: knowing when to stop
 - Data Augmentation: expanding training data
+
+### 8. Model Optimization: Hyperparameter Tuning
+Finding optimal settings:
+- Hyperparameters vs model parameters
+- Manual tuning and learning rate finder
+- Grid Search: exhaustive evaluation
+- Random Search: efficient sampling
+- Bayesian Optimization with Optuna
+- Cross-validation for robust evaluation
+- Practical guidelines and common mistakes
 
 ---
 
