@@ -298,6 +298,18 @@ Finding optimal settings:
 - Cross-validation for robust evaluation
 - Practical guidelines and common mistakes
 
+### 9. Convolutional Neural Networks (CNN)
+
+Deep learning for visual data:
+
+- CNN fundamentals: why convolutions work for images
+- Kernels and filters: detecting edges, textures, patterns
+- Padding and strides: controlling output dimensions
+- Pooling layers: max pooling, average pooling, downsampling
+- Classic architectures: LeNet, AlexNet, VGG, ResNet
+- Data augmentation: flips, rotations, color jittering
+- Transfer learning: leveraging pre-trained models
+
 ---
 
 ## 📖 Recommended Resources
