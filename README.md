@@ -10,16 +10,17 @@ A structured, hands-on learning repository for mastering deep learning fundament
 
 ## 🎯 What You'll Learn
 
-| Module | Topics | Difficulty |
-|--------|--------|------------|
-| Getting Started | DL foundations, architectures, toolkit | ⭐ Beginner |
-| Neural Networks: Basics | Neurons, perceptrons, activation functions | ⭐ Beginner |
-| PyTorch Fundamentals | Tensors, autograd, GPU computing | ⭐⭐ Intermediate |
-| Neural Network Training | Backprop, gradient descent, optimizers | ⭐⭐ Intermediate |
-| Neural Networks in PyTorch | nn.Module, DataLoaders, loss functions | ⭐⭐ Intermediate |
-| Model Optimization: Training Algorithms | Momentum, RMSProp, Adam | ⭐⭐⭐ Advanced |
-| Model Optimization: Regularization | Dropout, L1/L2, BatchNorm, Early Stopping | ⭐⭐⭐ Advanced |
-| Model Optimization: Hyperparameter Tuning | Grid Search, Random Search, Optuna | ⭐⭐⭐ Advanced |
+| Module                                    | Topics                                     | Difficulty        |
+| ----------------------------------------- | ------------------------------------------ | ----------------- |
+| Getting Started                           | DL foundations, architectures, toolkit     | ⭐ Beginner       |
+| Neural Networks: Basics                   | Neurons, perceptrons, activation functions | ⭐ Beginner       |
+| PyTorch Fundamentals                      | Tensors, autograd, GPU computing           | ⭐⭐ Intermediate |
+| Neural Network Training                   | Backprop, gradient descent, optimizers     | ⭐⭐ Intermediate |
+| Neural Networks in PyTorch                | nn.Module, DataLoaders, loss functions     | ⭐⭐ Intermediate |
+| Convolutional Neural Networks             | CNNs, kernels, pooling, transfer learning  | ⭐⭐ Intermediate |
+| Model Optimization: Training Algorithms   | Momentum, RMSProp, Adam                    | ⭐⭐⭐ Advanced   |
+| Model Optimization: Regularization        | Dropout, L1/L2, BatchNorm, Early Stopping  | ⭐⭐⭐ Advanced   |
+| Model Optimization: Hyperparameter Tuning | Grid Search, Random Search, Optuna         | ⭐⭐⭐ Advanced   |
 
 ---
 
@@ -121,6 +122,17 @@ step-into-dl/
 │   ├── 07-Practical-Guidelines.md     # Tuning order, common mistakes
 │   └── optuna_tuning.ipynb            # 📓 Optuna implementation
 │
+├── 🖼️ Convolutional Neural Networks (CNN)/
+│   ├── README.md                      # Module overview
+│   ├── 01-CNN-Fundamentals.md         # Why CNNs work, convolution operation
+│   ├── 02-Kernels-and-Filters.md      # How filters detect features
+│   ├── 03-Padding-and-Strides.md      # Controlling output dimensions
+│   ├── 04-Pooling-Layers.md           # Downsampling techniques
+│   ├── 05-CNN-Architectures.md        # LeNet, AlexNet, VGG, ResNet
+│   ├── 06-Data-Augmentation.md        # Expanding training data
+│   ├── CIFAR10_image_classification.ipynb   # 📓 CIFAR-10 classifier
+│   └── CALTECH101_classification.ipynb      # 📓 Caltech-101 with transfer learning
+│
 └── README.md                          # You are here
 ```
 
@@ -154,24 +166,26 @@ step-into-dl/
 
 ## 📓 Notebooks Overview
 
-| Notebook | Module | What You'll Build |
-|----------|--------|-------------------|
-| `functions.ipynb` | Basics | Sigmoid, Softmax, Tanh, ReLU from scratch |
-| `tensor1.ipynb` | PyTorch | Tensor ops, matrix multiplication, GPU usage |
-| `tensor2.ipynb` | PyTorch | Reshaping, broadcasting, initialization |
-| `autograd.ipynb` | PyTorch | Gradient computation, computational graphs |
-| `gradient_descent.ipynb` | Training | GD optimizer from scratch |
-| `gd_vs_mini_gd_vs_sgd.ipynb` | Training | Compare Batch/Mini-Batch/SGD |
-| `log_loss.ipynb` | PyTorch NN | MSE vs BCE for classification |
-| `cross_entropy_loss.ipynb` | PyTorch NN | Multi-class classification loss |
-| `dataset_dataloader.ipynb` | PyTorch NN | FashionMNIST data pipeline |
-| `handwritten_digits.ipynb` | PyTorch NN | Complete MNIST classifier |
-| `optimizers.ipynb` | Optimization | SGD vs Momentum vs Adam |
-| `dropout_regularization.ipynb` | Regularization | Dropout effect on Sonar dataset |
-| `l2_regularization.ipynb` | Regularization | Weight decay and weight distributions |
-| `batch_norm.ipynb` | Regularization | BatchNorm impact on MNIST training |
-| `early_stopping.ipynb` | Regularization | Patience-based stopping with checkpoints |
-| `optuna_tuning.ipynb` | Hyperparameter Tuning | Bayesian optimization with Optuna |
+| Notebook                             | Module                | What You'll Build                                        |
+| ------------------------------------ | --------------------- | -------------------------------------------------------- |
+| `functions.ipynb`                    | Basics                | Sigmoid, Softmax, Tanh, ReLU from scratch                |
+| `tensor1.ipynb`                      | PyTorch               | Tensor ops, matrix multiplication, GPU usage             |
+| `tensor2.ipynb`                      | PyTorch               | Reshaping, broadcasting, initialization                  |
+| `autograd.ipynb`                     | PyTorch               | Gradient computation, computational graphs               |
+| `gradient_descent.ipynb`             | Training              | GD optimizer from scratch                                |
+| `gd_vs_mini_gd_vs_sgd.ipynb`         | Training              | Compare Batch/Mini-Batch/SGD                             |
+| `log_loss.ipynb`                     | PyTorch NN            | MSE vs BCE for classification                            |
+| `cross_entropy_loss.ipynb`           | PyTorch NN            | Multi-class classification loss                          |
+| `dataset_dataloader.ipynb`           | PyTorch NN            | FashionMNIST data pipeline                               |
+| `handwritten_digits.ipynb`           | PyTorch NN            | Complete MNIST classifier                                |
+| `optimizers.ipynb`                   | Optimization          | SGD vs Momentum vs Adam                                  |
+| `dropout_regularization.ipynb`       | Regularization        | Dropout effect on Sonar dataset                          |
+| `l2_regularization.ipynb`            | Regularization        | Weight decay and weight distributions                    |
+| `batch_norm.ipynb`                   | Regularization        | BatchNorm impact on MNIST training                       |
+| `early_stopping.ipynb`               | Regularization        | Patience-based stopping with checkpoints                 |
+| `optuna_tuning.ipynb`                | Hyperparameter Tuning | Bayesian optimization with Optuna                        |
+| `CIFAR10_image_classification.ipynb` | CNNs                  | CIFAR-10 classifier, custom CNN vs ResNet                |
+| `CALTECH101_classification.ipynb`    | CNNs                  | Caltech-101 with ResNet & EfficientNet transfer learning |
 
 ---
 
@@ -211,7 +225,9 @@ print(f"CUDA available: {torch.cuda.is_available()}")
 ## 📚 Module Details
 
 ### 1. Getting Started
+
 Foundational concepts for understanding deep learning:
+
 - Neural network architecture and information flow
 - When to use DL vs. traditional ML
 - Popular architectures: FNN, CNN, RNN, Transformers
@@ -219,39 +235,51 @@ Foundational concepts for understanding deep learning:
 - Common challenges: overfitting, vanishing gradients
 
 ### 2. Neural Networks: Basics
+
 The building blocks of neural networks:
+
 - Biological inspiration and artificial neurons
 - From Perceptrons to Multi-Layer Perceptrons
 - Activation functions: why non-linearity matters
 - Comprehensive guide with formulas and use cases
 
 ### 3. PyTorch Fundamentals
+
 Essential PyTorch skills:
+
 - Tensors: creation, operations, GPU acceleration
 - Autograd: automatic differentiation explained
 - NumPy interoperability and best practices
 
 ### 4. Neural Network Training
+
 How networks learn:
+
 - Backpropagation: the chain rule in action
 - Gradient Descent variants: Batch, Mini-Batch, SGD
 - Monitoring training: loss curves, debugging tips
 
 ### 5. Neural Networks in PyTorch
+
 Building real models:
+
 - `nn.Module`: the foundation of PyTorch models
 - Datasets and DataLoaders for efficient training
 - Loss functions: BCE, Cross Entropy, when to use each
 
 ### 6. Model Optimization: Training Algorithms
+
 Advanced training techniques:
+
 - EWMA: the math behind modern optimizers
 - Momentum: accelerating convergence
 - RMSProp: adaptive learning rates
 - Adam: the gold standard optimizer
 
 ### 7. Model Optimization: Regularization Techniques
+
 Preventing overfitting:
+
 - Dropout: randomly deactivating neurons
 - L1/L2 regularization: weight penalties
 - Batch Normalization: stabilizing training
@@ -259,7 +287,9 @@ Preventing overfitting:
 - Data Augmentation: expanding training data
 
 ### 8. Model Optimization: Hyperparameter Tuning
+
 Finding optimal settings:
+
 - Hyperparameters vs model parameters
 - Manual tuning and learning rate finder
 - Grid Search: exhaustive evaluation
@@ -273,16 +303,19 @@ Finding optimal settings:
 ## 📖 Recommended Resources
 
 ### Courses
+
 - [fast.ai](https://www.fast.ai/) — Practical deep learning
 - [Coursera Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning) — Andrew Ng
 - [CodeBasics Deep Learning](https://www.youtube.com/playlist?list=PLeo1K3hjS3uu7CxAacxVndI4bE_o3BDtO) — YouTube series
 
 ### Books
-- *Deep Learning* by Goodfellow, Bengio, Courville
-- *Hands-On Machine Learning* by Aurélien Géron
-- *PyTorch Documentation* — [pytorch.org/docs](https://pytorch.org/docs)
+
+- _Deep Learning_ by Goodfellow, Bengio, Courville
+- _Hands-On Machine Learning_ by Aurélien Géron
+- _PyTorch Documentation_ — [pytorch.org/docs](https://pytorch.org/docs)
 
 ### Practice
+
 - [Kaggle](https://www.kaggle.com/) — Competitions and datasets
 - [Google Colab](https://colab.research.google.com/) — Free GPU notebooks
 - [Hugging Face](https://huggingface.co/) — Pre-trained models
@@ -292,6 +325,7 @@ Finding optimal settings:
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+
 - Open issues for bugs or suggestions
 - Submit PRs to improve documentation
 - Add new topics or notebooks
