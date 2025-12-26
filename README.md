@@ -18,6 +18,7 @@ A structured, hands-on learning repository for mastering deep learning fundament
 | Neural Network Training                   | Backprop, gradient descent, optimizers     | ⭐⭐ Intermediate |
 | Neural Networks in PyTorch                | nn.Module, DataLoaders, loss functions     | ⭐⭐ Intermediate |
 | Convolutional Neural Networks             | CNNs, kernels, pooling, transfer learning  | ⭐⭐ Intermediate |
+| Sequence Models                           | RNNs, LSTMs, GRUs, vanishing gradients     | ⭐⭐ Intermediate |
 | Model Optimization: Training Algorithms   | Momentum, RMSProp, Adam                    | ⭐⭐⭐ Advanced   |
 | Model Optimization: Regularization        | Dropout, L1/L2, BatchNorm, Early Stopping  | ⭐⭐⭐ Advanced   |
 | Model Optimization: Hyperparameter Tuning | Grid Search, Random Search, Optuna         | ⭐⭐⭐ Advanced   |
@@ -133,6 +134,13 @@ step-into-dl/
 │   ├── CIFAR10_image_classification.ipynb   # 📓 CIFAR-10 classifier
 │   └── CALTECH101_classification.ipynb      # 📓 Caltech-101 with transfer learning
 │
+├── 📜 Sequence Models/
+│   ├── README.md                      # Module overview
+│   ├── 01-Introduction-to-Sequence-Models.md  # Sequential data, why order matters
+│   ├── 02-Recurrent-Neural-Networks.md       # RNN architecture, BPTT
+│   ├── 03-Vanishing-Gradient-Problem.md      # Gradient issues and solutions
+│   └── 04-LSTM-and-GRU.md             # Gated architectures
+│
 └── README.md                          # You are here
 ```
 
@@ -200,7 +208,7 @@ step-into-dl/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/step-into-dl.git
+git clone https://github.com/MitudruDutta/step-into-dl.git
 cd step-into-dl
 
 # Create virtual environment (recommended)
@@ -309,6 +317,16 @@ Deep learning for visual data:
 - Classic architectures: LeNet, AlexNet, VGG, ResNet
 - Data augmentation: flips, rotations, color jittering
 - Transfer learning: leveraging pre-trained models
+
+### 10. Sequence Models
+
+Deep learning for sequential data:
+
+- Introduction to sequence models: why order matters
+- Recurrent Neural Networks: hidden states, BPTT, architectural variants
+- Vanishing gradient problem: causes, impact, and solutions
+- LSTM: cell state, forget/input/output gates, long-term memory
+- GRU: simplified gating, reset/update gates, efficiency
 
 ---
 
