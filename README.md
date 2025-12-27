@@ -22,6 +22,7 @@ A structured, hands-on learning repository for mastering deep learning fundament
 | Model Optimization: Training Algorithms   | Momentum, RMSProp, Adam                    | ⭐⭐⭐ Advanced   |
 | Model Optimization: Regularization        | Dropout, L1/L2, BatchNorm, Early Stopping  | ⭐⭐⭐ Advanced   |
 | Model Optimization: Hyperparameter Tuning | Grid Search, Random Search, Optuna         | ⭐⭐⭐ Advanced   |
+| Transformers                              | Attention, BERT, GPT, Self-Supervision     | ⭐⭐⭐⭐ Expert   |
 
 ---
 
@@ -141,6 +142,18 @@ step-into-dl/
 │   ├── 03-Vanishing-Gradient-Problem.md      # Gradient issues and solutions
 │   └── 04-LSTM-and-GRU.md             # Gated architectures
 │
+├── 🤖 Transforms/
+│   ├── README.md                      # Module overview
+│   ├── 01-Word-Embeddings.md          # Word2Vec, GloVe, vector arithmetic
+│   ├── 02-Architecture-Overview.md    # Encoder, Decoder, variants
+│   ├── 03-Attention-Mechanism.md      # Query, Key, Value, scaled dot-product
+│   ├── 04-Multi-Head-Attention.md    # Diverse pattern capture
+│   ├── 05-Decoder-Mechanics.md        # Masked & cross-attention
+│   ├── 06-Self-Supervised-Training.md # CLM (GPT) vs MLM (BERT)
+│   ├── BERT.ipynb                     # 📓 BERT exploration
+│   ├── GPT2.ipynb                     # 📓 GPT-2 text generation
+│   └── spam_classification.ipynb      # 📓 Filter spam with BERT
+│
 └── README.md                          # You are here
 ```
 
@@ -161,6 +174,13 @@ step-into-dl/
 │  NN Training    │     │  NNs in         │     │    Model        │
 │  (Backprop,     │ ──► │  PyTorch        │ ──► │  Optimization   │
 │   GD)           │     │  (nn.Module)    │     │  (Adam, etc.)   │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+                                                        │
+        ┌───────────────────────────────────────────────┘
+        ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│  Regularization │     │  CNNs &         │     │  Transformers   │
+│  Techniques     │ ──► │  RNNs           │ ──► │  (BERT, GPT)    │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
 ```
 
@@ -194,6 +214,9 @@ step-into-dl/
 | `optuna_tuning.ipynb`                | Hyperparameter Tuning | Bayesian optimization with Optuna                        |
 | `CIFAR10_image_classification.ipynb` | CNNs                  | CIFAR-10 classifier, custom CNN vs ResNet                |
 | `CALTECH101_classification.ipynb`    | CNNs                  | Caltech-101 with ResNet & EfficientNet transfer learning |
+| `BERT.ipynb`                         | Transformers          | BERT embeddings and architecture exploration             |
+| `GPT2.ipynb`                         | Transformers          | Text generation with GPT-2 decoder                       |
+| `spam_classification.ipynb`          | Transformers          | Real-world spam filter using BERT                        |
 
 ---
 
@@ -327,6 +350,18 @@ Deep learning for sequential data:
 - Vanishing gradient problem: causes, impact, and solutions
 - LSTM: cell state, forget/input/output gates, long-term memory
 - GRU: simplified gating, reset/update gates, efficiency
+
+### 11. Transformers
+
+State-of-the-art architecture for NLP and beyond:
+
+- Word Embeddings: Word2Vec, GloVe, and the transition to contextual embeddings
+- Architecture Overview: The encoder-decoder framework and variants like BERT and GPT
+- Attention Mechanism: Deep dive into Query, Key, and Value components
+- Multi-Head Attention: Capturing diverse relationships in parallel
+- Decoder Mechanics: Masked self-attention and cross-attention for generation
+- Self-Supervised Training: Understanding CLM and MLM strategies
+- Transfer Learning: Fine-tuning pre-trained models for specific tasks
 
 ---
 
