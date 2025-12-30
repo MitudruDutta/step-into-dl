@@ -240,8 +240,23 @@ source venv/bin/activate  # Linux/Mac
 # venv\Scripts\activate   # Windows
 
 # Install dependencies
-pip install torch torchvision numpy pandas matplotlib jupyter scikit-learn
+pip install -r requirements.txt
 ```
+
+### Core Dependencies
+
+| Package      | Purpose                            |
+| ------------ | ---------------------------------- |
+| torch        | Deep learning framework            |
+| torchvision  | Image datasets & transforms        |
+| numpy        | Numerical computing                |
+| pandas       | Data manipulation                  |
+| matplotlib   | Visualization                      |
+| seaborn      | Statistical visualization          |
+| scikit-learn | ML utilities & metrics             |
+| optuna       | Hyperparameter tuning              |
+| transformers | Pre-trained NLP models (BERT, GPT) |
+| jupyter      | Interactive notebooks              |
 
 ### Verify Installation
 
