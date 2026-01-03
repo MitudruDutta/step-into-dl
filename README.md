@@ -33,126 +33,153 @@ step-into-dl/
 │
 ├── 📘 Getting Started/
 │   ├── README.md                      # Module index
-│   ├── 01-Neural-Networks-Foundation.md
-│   ├── 02-DL-vs-Statistical-ML.md
-│   ├── 03-NN-Architectures.md
-│   ├── 04-Developer-Toolkit.md
-│   ├── 05-Training-Fundamentals.md
-│   ├── 06-Common-Challenges.md
-│   ├── 07-Evaluation-Metrics.md
-│   ├── 08-Best-Practices.md
-│   ├── 09-Learning-Resources.md
-│   └── 10-Glossary.md
+│   └── docs/
+│       ├── 01-Neural-Networks-Foundation.md
+│       ├── 02-DL-vs-Statistical-ML.md
+│       ├── 03-NN-Architectures.md
+│       ├── 04-Developer-Toolkit.md
+│       ├── 05-Training-Fundamentals.md
+│       ├── 06-Common-Challenges.md
+│       ├── 07-Evaluation-Metrics.md
+│       ├── 08-Best-Practices.md
+│       ├── 09-Learning-Resources.md
+│       └── 10-Glossary.md
 │
 ├── 🔬 Neural Networks: Basics/
 │   ├── README.md
-│   ├── 01-What-is-a-Neuron.md
-│   ├── 02-Perceptrons-to-MLPs.md
-│   ├── 03-Insurance-Prediction-Intuition.md
-│   ├── 04-Role-of-Activation-Functions.md
-│   ├── 05-Activation-Functions-Guide.md
-│   ├── 06-Practical-Tips.md
-│   └── functions.ipynb                # 📓 Activation implementations
+│   ├── docs/
+│   │   ├── 01-What-is-a-Neuron.md
+│   │   ├── 02-Perceptrons-to-MLPs.md
+│   │   ├── 03-Insurance-Prediction-Intuition.md
+│   │   ├── 04-Role-of-Activation-Functions.md
+│   │   ├── 05-Activation-Functions-Guide.md
+│   │   └── 06-Practical-Tips.md
+│   └── notebooks/
+│       └── functions.ipynb            # 📓 Activation implementations
 │
 ├── 🔥 Pytorch/
 │   ├── README.md
-│   ├── 01-Matrix-Fundamentals.md
-│   ├── 02-Tensor-Basics.md
-│   ├── 03-Calculus-for-Learning.md
-│   ├── 04-Autograd-Explained.md
-│   ├── 05-Tensors-vs-NumPy.md
-│   ├── 06-Common-Operations.md
-│   ├── 07-Best-Practices.md
-│   ├── tensor1.ipynb                  # 📓 Tensor operations & GPU
-│   ├── tensor2.ipynb                  # 📓 Reshaping & initialization
-│   └── autograd.ipynb                 # 📓 Automatic differentiation
+│   ├── docs/
+│   │   ├── 01-Matrix-Fundamentals.md
+│   │   ├── 02-Tensor-Basics.md
+│   │   ├── 03-Calculus-Basics.md
+│   │   ├── 04-Autograd.md
+│   │   ├── 05-Tensors-vs-NumPy.md
+│   │   ├── 06-Operations-Reference.md
+│   │   └── 07-Best-Practices.md
+│   └── notebooks/
+│       ├── tensor1.ipynb              # 📓 Tensor operations & GPU
+│       ├── tensor2.ipynb              # 📓 Reshaping & initialization
+│       └── autograd.ipynb             # 📓 Automatic differentiation
 │
 ├── 📈 Neural Network: Training/
 │   ├── README.md
-│   ├── 01-Backpropagation.md
-│   ├── 02-Gradient-Descent.md
-│   ├── 03-GD-Variants.md
-│   ├── 04-Optimizers.md
-│   ├── 05-Monitoring-Training.md
-│   ├── data_generation.ipynb          # 📓 Synthetic data creation
-│   ├── gradient_descent.ipynb         # 📓 GD from scratch
-│   └── gd_vs_mini_gd_vs_sgd.ipynb     # 📓 GD variants comparison
+│   ├── data/
+│   ├── docs/
+│   │   ├── 01-Backpropagation.md
+│   │   ├── 02-Gradient-Descent.md
+│   │   ├── 03-GD-Variants.md
+│   │   ├── 04-Optimizers.md
+│   │   └── 05-Monitoring-Training.md
+│   └── notebooks/
+│       ├── data_generation.ipynb      # 📓 Synthetic data creation
+│       ├── gradient_descent.ipynb     # 📓 GD from scratch
+│       └── gd_vs_mini_gd_vs_sgd.ipynb # 📓 GD variants comparison
 │
 ├── ⚡ Neural Networks: Pytorch/
 │   ├── README.md
-│   ├── 01-nn-Module.md
-│   ├── 02-Datasets-DataLoaders.md
-│   ├── 03-Binary-Cross-Entropy.md
-│   ├── 04-Categorical-Cross-Entropy.md
-│   ├── 05-Training-Loop.md
-│   ├── log_loss.ipynb                 # 📓 MSE vs BCE
-│   ├── cross_entropy_loss.ipynb       # 📓 Multi-class loss
-│   ├── dataset_dataloader.ipynb       # 📓 Data pipelines
-│   └── handwritten_digits.ipynb       # 📓 MNIST classifier
+│   ├── data/
+│   ├── docs/
+│   │   ├── 01-nn-Module.md
+│   │   ├── 02-Datasets-DataLoaders.md
+│   │   ├── 03-Binary-Cross-Entropy.md
+│   │   ├── 04-Categorical-Cross-Entropy.md
+│   │   └── 05-Training-Loop.md
+│   └── notebooks/
+│       ├── log_loss.ipynb             # 📓 MSE vs BCE
+│       ├── cross_entropy_loss.ipynb   # 📓 Multi-class loss
+│       ├── dataset_dataloader.ipynb   # 📓 Data pipelines
+│       └── handwritten_digits.ipynb   # 📓 MNIST classifier
 │
 ├── 🚀 Model Optimization: Training Algorithms/
 │   ├── README.md
-│   ├── 01-What-is-Model-Optimization.md
-│   ├── 02-EWMA-Foundation.md
-│   ├── 03-Momentum.md
-│   ├── 04-RMSProp.md
-│   ├── 05-Adam.md
-│   ├── 06-Optimizer-Comparison.md
-│   └── optimizers.ipynb               # 📓 Optimizer comparison
+│   ├── data/
+│   ├── docs/
+│   │   ├── 01-What-is-Model-Optimization.md
+│   │   ├── 02-EWMA-Foundation.md
+│   │   ├── 03-Momentum.md
+│   │   ├── 04-RMSProp.md
+│   │   ├── 05-Adam.md
+│   │   └── 06-Optimizer-Comparison.md
+│   └── notebooks/
+│       └── optimizers.ipynb           # 📓 Optimizer comparison
 │
 ├── 🛡️ Model Optimization: Regularization Techniques/
 │   ├── README.md                      # Module overview and learning path
-│   ├── 01-Understanding-Regularization.md  # Overfitting and bias-variance
-│   ├── 02-Dropout.md                  # Dropout regularization
-│   ├── 03-L1-L2-Regularization.md     # Weight penalties and decay
-│   ├── 04-Batch-Normalization.md      # Normalizing layer inputs
-│   ├── 05-Early-Stopping.md           # Optimal stopping point
-│   ├── 06-Data-Augmentation.md        # Expanding training data
-│   ├── dropout_regularization.ipynb   # 📓 Dropout comparison
-│   ├── l2_regularization.ipynb        # 📓 Weight decay demo
-│   ├── batch_norm.ipynb               # 📓 BatchNorm on MNIST
-│   └── early_stopping.ipynb           # 📓 Early stopping implementation
+│   ├── data/
+│   ├── docs/
+│   │   ├── 01-Understanding-Regularization.md  # Overfitting and bias-variance
+│   │   ├── 02-Dropout.md                  # Dropout regularization
+│   │   ├── 03-L1-L2-Regularization.md     # Weight penalties and decay
+│   │   ├── 04-Batch-Normalization.md      # Normalizing layer inputs
+│   │   ├── 05-Early-Stopping.md           # Optimal stopping point
+│   │   └── 06-Data-Augmentation.md        # Expanding training data
+│   └── notebooks/
+│       ├── dropout_regularization.ipynb   # 📓 Dropout comparison
+│       ├── l2_regularization.ipynb        # 📓 Weight decay demo
+│       ├── batch_norm.ipynb               # 📓 BatchNorm on MNIST
+│       └── early_stopping.ipynb           # 📓 Early stopping implementation
 │
 ├── 🎛️ Model Optimization: Hyperparameter Tuning/
 │   ├── README.md                      # Module overview and learning path
-│   ├── 01-What-is-Hyperparameter-Tuning.md  # Hyperparameters vs parameters
-│   ├── 02-Manual-Tuning.md            # LR finder, systematic approach
-│   ├── 03-Grid-Search.md              # Exhaustive search
-│   ├── 04-Random-Search.md            # Efficient sampling
-│   ├── 05-Bayesian-Optimization.md    # Optuna and intelligent search
-│   ├── 06-Cross-Validation.md         # K-fold CV and validation strategies
-│   ├── 07-Practical-Guidelines.md     # Tuning order, common mistakes
-│   └── optuna_tuning.ipynb            # 📓 Optuna implementation
+│   ├── docs/
+│   │   ├── 01-What-is-Hyperparameter-Tuning.md  # Hyperparameters vs parameters
+│   │   ├── 02-Manual-Tuning.md            # LR finder, systematic approach
+│   │   ├── 03-Grid-Search.md              # Exhaustive search
+│   │   ├── 04-Random-Search.md            # Efficient sampling
+│   │   ├── 05-Bayesian-Optimization.md    # Optuna and intelligent search
+│   │   ├── 06-Cross-Validation.md         # K-fold CV and validation strategies
+│   │   └── 07-Practical-Guidelines.md     # Tuning order, common mistakes
+│   └── notebooks/
+│       └── optuna_tuning.ipynb            # 📓 Optuna implementation
 │
 ├── 🖼️ Convolutional Neural Networks (CNN)/
 │   ├── README.md                      # Module overview
-│   ├── 01-CNN-Fundamentals.md         # Why CNNs work, convolution operation
-│   ├── 02-Kernels-and-Filters.md      # How filters detect features
-│   ├── 03-Padding-and-Strides.md      # Controlling output dimensions
-│   ├── 04-Pooling-Layers.md           # Downsampling techniques
-│   ├── 05-CNN-Architectures.md        # LeNet, AlexNet, VGG, ResNet
-│   ├── 06-Data-Augmentation.md        # Expanding training data
-│   ├── CIFAR10_image_classification.ipynb   # 📓 CIFAR-10 classifier
-│   └── CALTECH101_classification.ipynb      # 📓 Caltech-101 with transfer learning
+│   ├── data/
+│   ├── docs/
+│   │   ├── 01-CNN-Fundamentals.md         # Why CNNs work, convolution operation
+│   │   ├── 02-Kernels-and-Filters.md      # How filters detect features
+│   │   ├── 03-Padding-and-Strides.md      # Controlling output dimensions
+│   │   ├── 04-Pooling-Layers.md           # Downsampling techniques
+│   │   ├── 05-CNN-Architectures.md        # LeNet, AlexNet, VGG, ResNet
+│   │   ├── 06-Data-Augmentation.md        # Expanding training data
+│   │   └── 07-Transfer-Learning.md        # Transfer learning in practice
+│   └── notebooks/
+│       ├── CIFAR10_image_classification.ipynb   # 📓 CIFAR-10 classifier
+│       └── CALTECH101_classification.ipynb      # 📓 Caltech-101 with transfer learning
 │
 ├── 📜 Sequence Models/
 │   ├── README.md                      # Module overview
-│   ├── 01-Introduction-to-Sequence-Models.md  # Sequential data, why order matters
-│   ├── 02-Recurrent-Neural-Networks.md       # RNN architecture, BPTT
-│   ├── 03-Vanishing-Gradient-Problem.md      # Gradient issues and solutions
-│   └── 04-LSTM-and-GRU.md             # Gated architectures
+│   └── docs/
+│       ├── 01-Introduction-to-Sequence-Models.md  # Sequential data, why order matters
+│       ├── 02-Recurrent-Neural-Networks.md       # RNN architecture, BPTT
+│       ├── 03-Vanishing-Gradient-Problem.md      # Gradient issues and solutions
+│       └── 04-LSTM-and-GRU.md             # Gated architectures
 │
-├── 🤖 Transforms/
+├── 🤖 Transformers/
 │   ├── README.md                      # Module overview
-│   ├── 01-Word-Embeddings.md          # Word2Vec, GloVe, vector arithmetic
-│   ├── 02-Architecture-Overview.md    # Encoder, Decoder, variants
-│   ├── 03-Attention-Mechanism.md      # Query, Key, Value, scaled dot-product
-│   ├── 04-Multi-Head-Attention.md    # Diverse pattern capture
-│   ├── 05-Decoder-Mechanics.md        # Masked & cross-attention
-│   ├── 06-Self-Supervised-Training.md # CLM (GPT) vs MLM (BERT)
-│   ├── BERT.ipynb                     # 📓 BERT exploration
-│   ├── GPT2.ipynb                     # 📓 GPT-2 text generation
-│   └── spam_classification.ipynb      # 📓 Filter spam with BERT
+│   ├── data/
+│   ├── docs/
+│   │   ├── 01-Word-Embeddings.md          # Word2Vec, GloVe, vector arithmetic
+│   │   ├── 02-Architecture-Overview.md    # Encoder, Decoder, variants
+│   │   ├── 03-Attention-Mechanism.md      # Query, Key, Value, scaled dot-product
+│   │   ├── 04-Multi-Head-Attention.md     # Diverse pattern capture
+│   │   ├── 05-Decoder-Mechanics.md        # Masked & cross-attention
+│   │   └── 06-Self-Supervised-Training.md # CLM (GPT) vs MLM (BERT)
+│   └── notebooks/
+│       ├── BERT.ipynb                     # 📓 BERT exploration
+│       ├── GPT2.ipynb                     # 📓 GPT-2 text generation
+│       └── spam_classification.ipynb      # 📓 Filter spam with BERT
 │
 └── README.md                          # You are here
 ```
@@ -186,37 +213,38 @@ step-into-dl/
 
 ### Quick Start
 
-1. **New to Deep Learning?** → Start with `Getting Started/01-Neural-Networks-Foundation.md`
+1. **New to Deep Learning?** → Start with `Getting Started/docs/01-Neural-Networks-Foundation.md`
 2. **Know the basics?** → Jump to `Neural Network: Training/` for hands-on practice
-3. **Ready to build?** → Go to `Neural Networks: Pytorch/handwritten_digits.ipynb`
+3. **Ready to build?** → Go to `Neural Networks: Pytorch/notebooks/handwritten_digits.ipynb`
 
 ---
 
 ## 📓 Notebooks Overview
 
-| Notebook                             | Module                | What You'll Build                                        |
-| ------------------------------------ | --------------------- | -------------------------------------------------------- |
-| `functions.ipynb`                    | Basics                | Sigmoid, Softmax, Tanh, ReLU from scratch                |
-| `tensor1.ipynb`                      | PyTorch               | Tensor ops, matrix multiplication, GPU usage             |
-| `tensor2.ipynb`                      | PyTorch               | Reshaping, broadcasting, initialization                  |
-| `autograd.ipynb`                     | PyTorch               | Gradient computation, computational graphs               |
-| `gradient_descent.ipynb`             | Training              | GD optimizer from scratch                                |
-| `gd_vs_mini_gd_vs_sgd.ipynb`         | Training              | Compare Batch/Mini-Batch/SGD                             |
-| `log_loss.ipynb`                     | PyTorch NN            | MSE vs BCE for classification                            |
-| `cross_entropy_loss.ipynb`           | PyTorch NN            | Multi-class classification loss                          |
-| `dataset_dataloader.ipynb`           | PyTorch NN            | FashionMNIST data pipeline                               |
-| `handwritten_digits.ipynb`           | PyTorch NN            | Complete MNIST classifier                                |
-| `optimizers.ipynb`                   | Optimization          | SGD vs Momentum vs Adam                                  |
-| `dropout_regularization.ipynb`       | Regularization        | Dropout effect on Sonar dataset                          |
-| `l2_regularization.ipynb`            | Regularization        | Weight decay and weight distributions                    |
-| `batch_norm.ipynb`                   | Regularization        | BatchNorm impact on MNIST training                       |
-| `early_stopping.ipynb`               | Regularization        | Patience-based stopping with checkpoints                 |
-| `optuna_tuning.ipynb`                | Hyperparameter Tuning | Bayesian optimization with Optuna                        |
-| `CIFAR10_image_classification.ipynb` | CNNs                  | CIFAR-10 classifier, custom CNN vs ResNet                |
-| `CALTECH101_classification.ipynb`    | CNNs                  | Caltech-101 with ResNet & EfficientNet transfer learning |
-| `BERT.ipynb`                         | Transformers          | BERT embeddings and architecture exploration             |
-| `GPT2.ipynb`                         | Transformers          | Text generation with GPT-2 decoder                       |
-| `spam_classification.ipynb`          | Transformers          | Real-world spam filter using BERT                        |
+| Notebook                                                                               | Module                | What You'll Build                                        |
+| -------------------------------------------------------------------------------------- | --------------------- | -------------------------------------------------------- |
+| `Neural Networks: Basics/notebooks/functions.ipynb`                                    | Basics                | Sigmoid, Softmax, Tanh, ReLU from scratch                |
+| `Pytorch/notebooks/tensor1.ipynb`                                                      | PyTorch               | Tensor ops, matrix multiplication, GPU usage             |
+| `Pytorch/notebooks/tensor2.ipynb`                                                      | PyTorch               | Reshaping, broadcasting, initialization                  |
+| `Pytorch/notebooks/autograd.ipynb`                                                     | PyTorch               | Gradient computation, computational graphs               |
+| `Neural Network: Training/notebooks/data_generation.ipynb`                             | Training              | Generate synthetic dataset with known weights            |
+| `Neural Network: Training/notebooks/gradient_descent.ipynb`                            | Training              | GD optimizer from scratch                                |
+| `Neural Network: Training/notebooks/gd_vs_mini_gd_vs_sgd.ipynb`                        | Training              | Compare Batch/Mini-Batch/SGD                             |
+| `Neural Networks: Pytorch/notebooks/log_loss.ipynb`                                    | PyTorch NN            | MSE vs BCE for classification                            |
+| `Neural Networks: Pytorch/notebooks/cross_entropy_loss.ipynb`                          | PyTorch NN            | Multi-class classification loss                          |
+| `Neural Networks: Pytorch/notebooks/dataset_dataloader.ipynb`                          | PyTorch NN            | FashionMNIST data pipeline                               |
+| `Neural Networks: Pytorch/notebooks/handwritten_digits.ipynb`                          | PyTorch NN            | Complete MNIST classifier                                |
+| `Model Optimization: Training Algorithms/notebooks/optimizers.ipynb`                   | Optimization          | SGD vs Momentum vs Adam                                  |
+| `Model Optimization: Regularization Techniques/notebooks/dropout_regularization.ipynb` | Regularization        | Dropout effect on Sonar dataset                          |
+| `Model Optimization: Regularization Techniques/notebooks/l2_regularization.ipynb`      | Regularization        | Weight decay and weight distributions                    |
+| `Model Optimization: Regularization Techniques/notebooks/batch_norm.ipynb`             | Regularization        | BatchNorm impact on MNIST training                       |
+| `Model Optimization: Regularization Techniques/notebooks/early_stopping.ipynb`         | Regularization        | Patience-based stopping with checkpoints                 |
+| `Model Optimization: Hyperparameter Tuning/notebooks/optuna_tuning.ipynb`              | Hyperparameter Tuning | Bayesian optimization with Optuna                        |
+| `Convolution Neural Networks (CNN)/notebooks/CIFAR10_image_classification.ipynb`       | CNNs                  | CIFAR-10 classifier, custom CNN vs ResNet                |
+| `Convolution Neural Networks (CNN)/notebooks/CALTECH101_classification.ipynb`          | CNNs                  | Caltech-101 with ResNet & EfficientNet transfer learning |
+| `Transforms/notebooks/BERT.ipynb`                                                      | Transformers          | BERT embeddings and architecture exploration             |
+| `Transforms/notebooks/GPT2.ipynb`                                                      | Transformers          | Text generation with GPT-2 decoder                       |
+| `Transforms/notebooks/spam_classification.ipynb`                                       | Transformers          | Real-world spam filter using BERT                        |
 
 ---
 

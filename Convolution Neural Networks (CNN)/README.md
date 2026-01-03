@@ -6,27 +6,27 @@ This module provides an in-depth exploration of **Convolutional Neural Networks 
 
 ## 📚 Topics
 
-| File                                                   | Topic               | Description                                                  |
-| ------------------------------------------------------ | ------------------- | ------------------------------------------------------------ |
-| [01-CNN-Fundamentals.md](01-CNN-Fundamentals.md)       | CNN Fundamentals    | Why CNNs work, convolution operation, feature hierarchies    |
-| [02-Kernels-and-Filters.md](02-Kernels-and-Filters.md) | Kernels and Filters | How filters detect features, learned vs hand-crafted kernels |
-| [03-Padding-and-Strides.md](03-Padding-and-Strides.md) | Padding and Strides | Controlling output dimensions, spatial management            |
-| [04-Pooling-Layers.md](04-Pooling-Layers.md)           | Pooling Layers      | Downsampling, max pooling, average pooling                   |
-| [05-CNN-Architectures.md](05-CNN-Architectures.md)     | CNN Architectures   | LeNet, AlexNet, VGG, ResNet, and modern designs              |
-| [06-Data-Augmentation.md](06-Data-Augmentation.md)     | Data Augmentation   | Expanding training data with transformations                 |
-| [07-Transfer-Learning.md](07-Transfer-Learning.md)     | Transfer Learning   | Using pre-trained models, fine-tuning strategies             |
+| File                                                        | Topic               | Description                                                  |
+| ----------------------------------------------------------- | ------------------- | ------------------------------------------------------------ |
+| [01-CNN-Fundamentals.md](docs/01-CNN-Fundamentals.md)       | CNN Fundamentals    | Why CNNs work, convolution operation, feature hierarchies    |
+| [02-Kernels-and-Filters.md](docs/02-Kernels-and-Filters.md) | Kernels and Filters | How filters detect features, learned vs hand-crafted kernels |
+| [03-Padding-and-Strides.md](docs/03-Padding-and-Strides.md) | Padding and Strides | Controlling output dimensions, spatial management            |
+| [04-Pooling-Layers.md](docs/04-Pooling-Layers.md)           | Pooling Layers      | Downsampling, max pooling, average pooling                   |
+| [05-CNN-Architectures.md](docs/05-CNN-Architectures.md)     | CNN Architectures   | LeNet, AlexNet, VGG, ResNet, and modern designs              |
+| [06-Data-Augmentation.md](docs/06-Data-Augmentation.md)     | Data Augmentation   | Expanding training data with transformations                 |
+| [07-Transfer-Learning.md](docs/07-Transfer-Learning.md)     | Transfer Learning   | Using pre-trained models, fine-tuning strategies             |
 
 ---
 
 ## 🎯 Learning Path
 
-1. **Understand the basics** → [01-CNN-Fundamentals.md](01-CNN-Fundamentals.md)
-2. **Learn about filters** → [02-Kernels-and-Filters.md](02-Kernels-and-Filters.md)
-3. **Master spatial control** → [03-Padding-and-Strides.md](03-Padding-and-Strides.md)
-4. **Explore pooling** → [04-Pooling-Layers.md](04-Pooling-Layers.md)
-5. **Study architectures** → [05-CNN-Architectures.md](05-CNN-Architectures.md)
-6. **Augment your data** → [06-Data-Augmentation.md](06-Data-Augmentation.md)
-7. **Leverage pre-trained models** → [07-Transfer-Learning.md](07-Transfer-Learning.md)
+1. **Understand the basics** → [01-CNN-Fundamentals.md](docs/01-CNN-Fundamentals.md)
+2. **Learn about filters** → [02-Kernels-and-Filters.md](docs/02-Kernels-and-Filters.md)
+3. **Master spatial control** → [03-Padding-and-Strides.md](docs/03-Padding-and-Strides.md)
+4. **Explore pooling** → [04-Pooling-Layers.md](docs/04-Pooling-Layers.md)
+5. **Study architectures** → [05-CNN-Architectures.md](docs/05-CNN-Architectures.md)
+6. **Augment your data** → [06-Data-Augmentation.md](docs/06-Data-Augmentation.md)
+7. **Leverage pre-trained models** → [07-Transfer-Learning.md](docs/07-Transfer-Learning.md)
 
 ---
 
@@ -180,10 +180,10 @@ Before diving into CNNs, you should understand:
 
 ## 📓 Notebooks
 
-| Notebook                                                                 | Description                                                                       |
-| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| [CIFAR10_image_classification.ipynb](CIFAR10_image_classification.ipynb) | Build a CNN from scratch and compare with ResNet-18 transfer learning on CIFAR-10 |
-| [CALTECH101_classification.ipynb](CALTECH101_classification.ipynb)       | Multi-class classification with custom CNN, ResNet-18, and EfficientNet-B0        |
+| Notebook                                                                           | Description                                                                       |
+| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [CIFAR10_image_classification.ipynb](notebooks/CIFAR10_image_classification.ipynb) | Build a CNN from scratch and compare with ResNet-18 transfer learning on CIFAR-10 |
+| [CALTECH101_classification.ipynb](notebooks/CALTECH101_classification.ipynb)       | Multi-class classification with custom CNN, ResNet-18, and EfficientNet-B0        |
 
 ---
 

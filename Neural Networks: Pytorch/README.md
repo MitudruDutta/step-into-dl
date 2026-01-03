@@ -6,26 +6,36 @@ This module covers the practical transition from theoretical neural networks to 
 
 ## 📚 Documentation
 
-| File | Topic | Description |
-|------|-------|-------------|
-| [01-nn-Module.md](01-nn-Module.md) | nn.Module | Building models, subclassing, forward method |
-| [02-Datasets-DataLoaders.md](02-Datasets-DataLoaders.md) | Data Pipelines | Datasets, DataLoaders, batching, shuffling |
-| [03-Binary-Cross-Entropy.md](03-Binary-Cross-Entropy.md) | BCE Loss | Binary classification, why MSE fails |
-| [04-Categorical-Cross-Entropy.md](04-Categorical-Cross-Entropy.md) | Cross Entropy | Multi-class classification, softmax |
-| [05-Training-Loop.md](05-Training-Loop.md) | Training Loop | Complete workflow, common mistakes |
+| File                                                                    | Topic          | Description                                  |
+| ----------------------------------------------------------------------- | -------------- | -------------------------------------------- |
+| [01-nn-Module.md](docs/01-nn-Module.md)                                 | nn.Module      | Building models, subclassing, forward method |
+| [02-Datasets-DataLoaders.md](docs/02-Datasets-DataLoaders.md)           | Data Pipelines | Datasets, DataLoaders, batching, shuffling   |
+| [03-Binary-Cross-Entropy.md](docs/03-Binary-Cross-Entropy.md)           | BCE Loss       | Binary classification, why MSE fails         |
+| [04-Categorical-Cross-Entropy.md](docs/04-Categorical-Cross-Entropy.md) | Cross Entropy  | Multi-class classification, softmax          |
+| [05-Training-Loop.md](docs/05-Training-Loop.md)                         | Training Loop  | Complete workflow, common mistakes           |
 
 ---
 
 ## 💻 Notebooks
 
-| Notebook | Description |
-|----------|-------------|
-| [log_loss.ipynb](log_loss.ipynb) | MSE vs Binary Cross Entropy comparison |
-| [cross_entropy_loss.ipynb](cross_entropy_loss.ipynb) | Cross Entropy for multi-class classification |
-| [dataset_dataloader.ipynb](dataset_dataloader.ipynb) | FashionMNIST dataset and DataLoader usage |
-| [handwritten_digits.ipynb](handwritten_digits.ipynb) | Complete MNIST digit classifier with evaluation |
+| Notebook                                                       | Description                                     |
+| -------------------------------------------------------------- | ----------------------------------------------- |
+| [log_loss.ipynb](notebooks/log_loss.ipynb)                     | MSE vs Binary Cross Entropy comparison          |
+| [cross_entropy_loss.ipynb](notebooks/cross_entropy_loss.ipynb) | Cross Entropy for multi-class classification    |
+| [dataset_dataloader.ipynb](notebooks/dataset_dataloader.ipynb) | FashionMNIST dataset and DataLoader usage       |
+| [handwritten_digits.ipynb](notebooks/handwritten_digits.ipynb) | Complete MNIST digit classifier with evaluation |
 
 ---
+
+## 🗃️ Dataset Notes
+
+This module uses **public datasets that are typically downloaded automatically at runtime** (so the raw data is not stored/published in this repo).
+
+- [notebooks/dataset_dataloader.ipynb](notebooks/dataset_dataloader.ipynb) uses **FashionMNIST**.
+- [notebooks/handwritten_digits.ipynb](notebooks/handwritten_digits.ipynb) uses **MNIST**.
+
+In most setups, these datasets are fetched via `torchvision.datasets.*` and cached locally (commonly into a `data/` directory, depending on your notebook settings).
+If you’re in an offline environment, download the dataset once on a machine with internet and point `torchvision` to that local cache path.
 
 ## 🎯 Learning Path
 
@@ -46,19 +56,19 @@ class MyModel(nn.Module):
     def __init__(self):
         super().__init__()
         self.layers = ...
-    
+
     def forward(self, x):
         return self.layers(x)
 ```
 
 ### Loss Function Selection
 
-| Problem Type | Loss Function | Final Activation |
-|--------------|---------------|------------------|
-| Regression | MSE, MAE | None (linear) |
-| Binary Classification | BCEWithLogitsLoss | None |
-| Multi-Class | CrossEntropyLoss | None |
-| Multi-Label | BCEWithLogitsLoss | None |
+| Problem Type          | Loss Function     | Final Activation |
+| --------------------- | ----------------- | ---------------- |
+| Regression            | MSE, MAE          | None (linear)    |
+| Binary Classification | BCEWithLogitsLoss | None             |
+| Multi-Class           | CrossEntropyLoss  | None             |
+| Multi-Label           | BCEWithLogitsLoss | None             |
 
 ### Training Loop Essentials
 
@@ -83,7 +93,6 @@ train_loader = DataLoader(
 )
 ```
 
-
 ---
 
 ## ⚠️ Common Mistakes
@@ -99,6 +108,7 @@ train_loader = DataLoader(
 ## 📖 Prerequisites
 
 Before this module, you should understand:
+
 - PyTorch tensor basics (see Pytorch/ module)
 - Autograd and gradient computation
 - Neural network fundamentals (see Neural Networks: Basics/)
@@ -106,4 +116,4 @@ Before this module, you should understand:
 
 ---
 
-*This module bridges theory and practice. Understanding these PyTorch fundamentals prepares you for building real-world classification models.*
+_This module bridges theory and practice. Understanding these PyTorch fundamentals prepares you for building real-world classification models._

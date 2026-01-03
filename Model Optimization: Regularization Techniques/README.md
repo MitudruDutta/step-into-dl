@@ -6,25 +6,25 @@ This module provides an in-depth exploration of **Regularization**—a critical 
 
 ## 📚 Topics
 
-| File | Topic | Description |
-|------|-------|-------------|
-| [01-Understanding-Regularization.md](01-Understanding-Regularization.md) | Understanding Regularization | What is regularization, overfitting, and the bias-variance tradeoff |
-| [02-Dropout.md](02-Dropout.md) | Dropout Regularization | Randomly deactivating neurons to prevent co-adaptation |
-| [03-L1-L2-Regularization.md](03-L1-L2-Regularization.md) | L1 and L2 Regularization | Weight penalties, sparsity, and weight decay |
-| [04-Batch-Normalization.md](04-Batch-Normalization.md) | Batch Normalization | Normalizing layer inputs for stable training |
-| [05-Early-Stopping.md](05-Early-Stopping.md) | Early Stopping | Stopping training at the optimal point |
-| [06-Data-Augmentation.md](06-Data-Augmentation.md) | Data Augmentation | Artificially expanding training data |
+| File                                                                          | Topic                        | Description                                                         |
+| ----------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------------------- |
+| [01-Understanding-Regularization.md](docs/01-Understanding-Regularization.md) | Understanding Regularization | What is regularization, overfitting, and the bias-variance tradeoff |
+| [02-Dropout.md](docs/02-Dropout.md)                                           | Dropout Regularization       | Randomly deactivating neurons to prevent co-adaptation              |
+| [03-L1-L2-Regularization.md](docs/03-L1-L2-Regularization.md)                 | L1 and L2 Regularization     | Weight penalties, sparsity, and weight decay                        |
+| [04-Batch-Normalization.md](docs/04-Batch-Normalization.md)                   | Batch Normalization          | Normalizing layer inputs for stable training                        |
+| [05-Early-Stopping.md](docs/05-Early-Stopping.md)                             | Early Stopping               | Stopping training at the optimal point                              |
+| [06-Data-Augmentation.md](docs/06-Data-Augmentation.md)                       | Data Augmentation            | Artificially expanding training data                                |
 
 ---
 
 ## 🎯 Learning Path
 
-1. **Start with fundamentals** → [01-Understanding-Regularization.md](01-Understanding-Regularization.md)
-2. **Learn Dropout** → [02-Dropout.md](02-Dropout.md)
-3. **Understand weight penalties** → [03-L1-L2-Regularization.md](03-L1-L2-Regularization.md)
-4. **Explore BatchNorm** → [04-Batch-Normalization.md](04-Batch-Normalization.md)
-5. **Master early stopping** → [05-Early-Stopping.md](05-Early-Stopping.md)
-6. **Expand your data** → [06-Data-Augmentation.md](06-Data-Augmentation.md)
+1. **Start with fundamentals** → [01-Understanding-Regularization.md](docs/01-Understanding-Regularization.md)
+2. **Learn Dropout** → [02-Dropout.md](docs/02-Dropout.md)
+3. **Understand weight penalties** → [03-L1-L2-Regularization.md](docs/03-L1-L2-Regularization.md)
+4. **Explore BatchNorm** → [04-Batch-Normalization.md](docs/04-Batch-Normalization.md)
+5. **Master early stopping** → [05-Early-Stopping.md](docs/05-Early-Stopping.md)
+6. **Expand your data** → [06-Data-Augmentation.md](docs/06-Data-Augmentation.md)
 
 ---
 
@@ -46,14 +46,14 @@ With Regularization:
 
 ### Regularization Techniques at a Glance
 
-| Technique | How It Works | When to Use |
-|-----------|--------------|-------------|
-| **Dropout** | Randomly drops neurons | Deep networks, FC layers |
-| **L2 (Weight Decay)** | Penalizes large weights | Default choice, always |
-| **L1** | Produces sparse weights | Feature selection |
-| **Batch Normalization** | Normalizes layer inputs | Deep networks |
-| **Early Stopping** | Stops at optimal point | Always |
-| **Data Augmentation** | Creates data variations | Limited data, images |
+| Technique               | How It Works            | When to Use              |
+| ----------------------- | ----------------------- | ------------------------ |
+| **Dropout**             | Randomly drops neurons  | Deep networks, FC layers |
+| **L2 (Weight Decay)**   | Penalizes large weights | Default choice, always   |
+| **L1**                  | Produces sparse weights | Feature selection        |
+| **Batch Normalization** | Normalizes layer inputs | Deep networks            |
+| **Early Stopping**      | Stops at optimal point  | Always                   |
+| **Data Augmentation**   | Creates data variations | Limited data, images     |
 
 ### Combining Techniques
 
@@ -67,12 +67,12 @@ class RegularizedNetwork(nn.Module):
             nn.BatchNorm1d(256),     # BatchNorm
             nn.ReLU(),
             nn.Dropout(p=0.3),       # Dropout
-            
+
             nn.Linear(256, 128),
             nn.BatchNorm1d(128),
             nn.ReLU(),
             nn.Dropout(p=0.3),
-            
+
             nn.Linear(128, 10)
         )
 
@@ -88,12 +88,12 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=0.001, weight_decay=1e-4)
 
 ### Regularization Strategy by Overfitting Severity
 
-| Severity | Recommended Approach |
-|----------|---------------------|
-| **Mild** | L2 regularization (weight_decay=1e-4) |
-| **Moderate** | L2 + Dropout (p=0.3) + BatchNorm |
-| **Severe** | Above + Data Augmentation |
-| **Extreme** | All above + Early Stopping + Smaller model |
+| Severity     | Recommended Approach                       |
+| ------------ | ------------------------------------------ |
+| **Mild**     | L2 regularization (weight_decay=1e-4)      |
+| **Moderate** | L2 + Dropout (p=0.3) + BatchNorm           |
+| **Severe**   | Above + Data Augmentation                  |
+| **Extreme**  | All above + Early Stopping + Smaller model |
 
 ### PyTorch Cheat Sheet
 
@@ -121,22 +121,23 @@ transforms.ColorJitter(0.2, 0.2, 0.2)
 
 ## 📓 Notebooks
 
-| Notebook | Topic | Description |
-|----------|-------|-------------|
-| [dropout_regularization.ipynb](dropout_regularization.ipynb) | Dropout | Compare models with/without dropout on Sonar dataset |
-| [l2_regularization.ipynb](l2_regularization.ipynb) | L2 / Weight Decay | Effect of weight_decay on training dynamics |
-| [batch_norm.ipynb](batch_norm.ipynb) | Batch Normalization | BatchNorm impact on MNIST training |
-| [early_stopping.ipynb](early_stopping.ipynb) | Early Stopping | Implementing patience-based stopping |
+| Notebook                                                               | Topic               | Description                                          |
+| ---------------------------------------------------------------------- | ------------------- | ---------------------------------------------------- |
+| [dropout_regularization.ipynb](notebooks/dropout_regularization.ipynb) | Dropout             | Compare models with/without dropout on Sonar dataset |
+| [l2_regularization.ipynb](notebooks/l2_regularization.ipynb)           | L2 / Weight Decay   | Effect of weight_decay on training dynamics          |
+| [batch_norm.ipynb](notebooks/batch_norm.ipynb)                         | Batch Normalization | BatchNorm impact on MNIST training                   |
+| [early_stopping.ipynb](notebooks/early_stopping.ipynb)                 | Early Stopping      | Implementing patience-based stopping                 |
 
 ---
 
 ## 🎓 Prerequisites
 
 Before diving into this module, you should understand:
+
 - Basic neural network architecture
 - Training loops and loss functions
 - Gradient descent and backpropagation
 
 ---
 
-*Regularization is essential for building models that work in the real world. Start simple, monitor validation performance, and add regularization as needed.*
+_Regularization is essential for building models that work in the real world. Start simple, monitor validation performance, and add regularization as needed._

@@ -4,23 +4,23 @@ This module provides an in-depth exploration of **Sequence Models**—the specia
 
 ---
 
-## � Topics
+## 📚 Topics
 
-| File                                                                           | Topic                           | Description                                              |
-| :----------------------------------------------------------------------------- | :------------------------------ | :------------------------------------------------------- |
-| [01-Introduction-to-Sequence-Models.md](01-Introduction-to-Sequence-Models.md) | Introduction to Sequence Models | What is sequential data, why order matters, applications |
-| [02-Recurrent-Neural-Networks.md](02-Recurrent-Neural-Networks.md)             | Recurrent Neural Networks (RNN) | RNN architecture, hidden states, BPTT, RNN variants      |
-| [03-Vanishing-Gradient-Problem.md](03-Vanishing-Gradient-Problem.md)           | Vanishing Gradient Problem      | Why gradients vanish, impact on learning, solutions      |
-| [04-LSTM-and-GRU.md](04-LSTM-and-GRU.md)                                       | LSTM & GRU Architectures        | Gated mechanisms, cell states, when to use each          |
+| File                                                                                | Topic                           | Description                                              |
+| :---------------------------------------------------------------------------------- | :------------------------------ | :------------------------------------------------------- |
+| [01-Introduction-to-Sequence-Models.md](docs/01-Introduction-to-Sequence-Models.md) | Introduction to Sequence Models | What is sequential data, why order matters, applications |
+| [02-Recurrent-Neural-Networks.md](docs/02-Recurrent-Neural-Networks.md)             | Recurrent Neural Networks (RNN) | RNN architecture, hidden states, BPTT, RNN variants      |
+| [03-Vanishing-Gradient-Problem.md](docs/03-Vanishing-Gradient-Problem.md)           | Vanishing Gradient Problem      | Why gradients vanish, impact on learning, solutions      |
+| [04-LSTM-and-GRU.md](docs/04-LSTM-and-GRU.md)                                       | LSTM & GRU Architectures        | Gated mechanisms, cell states, when to use each          |
 
 ---
 
-## � Learning Path
+## 🎯 Learning Path
 
-1. **Understand sequential data** → [01-Introduction-to-Sequence-Models.md](01-Introduction-to-Sequence-Models.md)
-2. **Learn RNN fundamentals** → [02-Recurrent-Neural-Networks.md](02-Recurrent-Neural-Networks.md)
-3. **Study the vanishing gradient problem** → [03-Vanishing-Gradient-Problem.md](03-Vanishing-Gradient-Problem.md)
-4. **Master gated architectures** → [04-LSTM-and-GRU.md](04-LSTM-and-GRU.md)
+1. **Understand sequential data** → [01-Introduction-to-Sequence-Models.md](docs/01-Introduction-to-Sequence-Models.md)
+2. **Learn RNN fundamentals** → [02-Recurrent-Neural-Networks.md](docs/02-Recurrent-Neural-Networks.md)
+3. **Study the vanishing gradient problem** → [03-Vanishing-Gradient-Problem.md](docs/03-Vanishing-Gradient-Problem.md)
+4. **Master gated architectures** → [04-LSTM-and-GRU.md](docs/04-LSTM-and-GRU.md)
 
 ---
 

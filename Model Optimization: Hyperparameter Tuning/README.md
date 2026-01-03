@@ -6,15 +6,15 @@ This module provides an in-depth exploration of **Hyperparameter Tuning**—the 
 
 ## 📚 Topics
 
-| # | Topic | Description |
-|---|-------|-------------|
-| 1 | [What is Hyperparameter Tuning](01-What-is-Hyperparameter-Tuning.md) | Hyperparameters vs parameters, categories, why tuning matters |
-| 2 | [Manual Tuning](02-Manual-Tuning.md) | Learning rate finder, batch size guidelines, systematic approach |
-| 3 | [Grid Search](03-Grid-Search.md) | Exhaustive search, GridSearchCV, when to use |
-| 4 | [Random Search](04-Random-Search.md) | Efficient sampling, log-uniform distributions, RandomizedSearchCV |
-| 5 | [Bayesian Optimization](05-Bayesian-Optimization.md) | Optuna, pruning, intelligent search strategies |
-| 6 | [Cross-Validation](06-Cross-Validation.md) | K-fold CV, stratified splits, time series validation |
-| 7 | [Practical Guidelines](07-Practical-Guidelines.md) | Tuning order, starting points, common mistakes |
+| #   | Topic                                                                     | Description                                                       |
+| --- | ------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| 1   | [What is Hyperparameter Tuning](docs/01-What-is-Hyperparameter-Tuning.md) | Hyperparameters vs parameters, categories, why tuning matters     |
+| 2   | [Manual Tuning](docs/02-Manual-Tuning.md)                                 | Learning rate finder, batch size guidelines, systematic approach  |
+| 3   | [Grid Search](docs/03-Grid-Search.md)                                     | Exhaustive search, GridSearchCV, when to use                      |
+| 4   | [Random Search](docs/04-Random-Search.md)                                 | Efficient sampling, log-uniform distributions, RandomizedSearchCV |
+| 5   | [Bayesian Optimization](docs/05-Bayesian-Optimization.md)                 | Optuna, pruning, intelligent search strategies                    |
+| 6   | [Cross-Validation](docs/06-Cross-Validation.md)                           | K-fold CV, stratified splits, time series validation              |
+| 7   | [Practical Guidelines](docs/07-Practical-Guidelines.md)                   | Tuning order, starting points, common mistakes                    |
 
 ---
 
@@ -35,20 +35,20 @@ After completing this module, you will be able to:
 
 ### Hyperparameters vs Model Parameters
 
-| Aspect | Hyperparameters | Model Parameters |
-|--------|-----------------|------------------|
-| **When set** | Before training | During training |
-| **How determined** | Manual or search | Gradient descent |
-| **Examples** | Learning rate, batch size | Weights, biases |
+| Aspect             | Hyperparameters           | Model Parameters |
+| ------------------ | ------------------------- | ---------------- |
+| **When set**       | Before training           | During training  |
+| **How determined** | Manual or search          | Gradient descent |
+| **Examples**       | Learning rate, batch size | Weights, biases  |
 
 ### Search Methods Comparison
 
-| Method | Efficiency | Best For |
-|--------|------------|----------|
-| Manual | Low | Quick experiments |
-| Grid Search | Low | Small spaces (< 100 combinations) |
-| Random Search | Medium | Large spaces, initial exploration |
-| Bayesian (Optuna) | High | Production tuning, expensive evaluations |
+| Method            | Efficiency | Best For                                 |
+| ----------------- | ---------- | ---------------------------------------- |
+| Manual            | Low        | Quick experiments                        |
+| Grid Search       | Low        | Small spaces (< 100 combinations)        |
+| Random Search     | Medium     | Large spaces, initial exploration        |
+| Bayesian (Optuna) | High       | Production tuning, expensive evaluations |
 
 ### Tuning Priority Order
 
@@ -64,9 +64,9 @@ After completing this module, you will be able to:
 
 ## 📓 Notebooks
 
-| Notebook | Description |
-|----------|-------------|
-| [optuna_tuning.ipynb](optuna_tuning.ipynb) | Bayesian optimization with Optuna on real dataset |
+| Notebook                                             | Description                                       |
+| ---------------------------------------------------- | ------------------------------------------------- |
+| [optuna_tuning.ipynb](notebooks/optuna_tuning.ipynb) | Bayesian optimization with Optuna on real dataset |
 
 ---
 
@@ -99,7 +99,7 @@ def objective(trial):
     lr = trial.suggest_float('lr', 1e-5, 1e-1, log=True)
     hidden = trial.suggest_int('hidden', 32, 256)
     dropout = trial.suggest_float('dropout', 0.0, 0.5)
-    
+
     model = build_model(hidden, dropout)
     train(model, lr)
     return evaluate(model)
@@ -147,4 +147,4 @@ Before starting this module, you should be familiar with:
 
 ---
 
-*Good hyperparameters can make the difference between a model that barely works and one that achieves state-of-the-art performance. Invest time in tuning!*
+_Good hyperparameters can make the difference between a model that barely works and one that achieves state-of-the-art performance. Invest time in tuning!_

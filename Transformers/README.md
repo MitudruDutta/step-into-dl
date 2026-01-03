@@ -21,29 +21,12 @@ Follow these topics in order for a complete understanding of Transformers:
 
 ## 📂 Repository Contents
 
-| File                                  | Description                                                                        |
-| :------------------------------------ | :--------------------------------------------------------------------------------- |
-| `notebooks/BERT.ipynb`                | Hands-on implementation of BERT (Bidirectional Encoder Representations)            |
-| `notebooks/GPT2.ipynb`                | Practical notebook demonstrating GPT-2 architecture and text generation            |
-| `notebooks/spam_classification.ipynb` | Real-world application: Building a spam classifier with Transformers               |
-| `data/spam.csv`                       | Dataset for the spam classification task (expected locally; not published in-repo) |
-
----
-
-## 🗃️ Dataset Notes (Spam Classification)
-
-The spam classification notebook expects a small text dataset (SMS/email-style messages) at:
-
-- `data/spam.csv`
-
-This repository does **not** intend to publish/bundle that dataset. Instead, place your own local copy there.
-
-Typical formats that work (depending on how the notebook is written):
-
-- Two columns: `label,text` where `label` is `spam`/`ham` (or 1/0)
-- Or the common UCI SMS format: `v1,v2` where `v1` is the label and `v2` is the message text
-
-If you need a public equivalent dataset, search for the **“UCI SMS Spam Collection”** and export it to CSV in one of the formats above.
+| File                                  | Description                                                             |
+| :------------------------------------ | :---------------------------------------------------------------------- |
+| `notebooks/BERT.ipynb`                | Hands-on implementation of BERT (Bidirectional Encoder Representations) |
+| `notebooks/GPT2.ipynb`                | Practical notebook demonstrating GPT-2 architecture and text generation |
+| `notebooks/spam_classification.ipynb` | Real-world application: Building a spam classifier with Transformers    |
+| `data/spam.csv`                       | Dataset for the spam classification task                                |
 
 ---
 
